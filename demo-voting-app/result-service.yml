@@ -7,9 +7,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    matchLabels:
-      name: worker-app-pod
-      app: demo-worker-app
+    name: worker-app-pod
+    app: demo-worker-app
   ports:
     - port: 80
       targetPort: 30002

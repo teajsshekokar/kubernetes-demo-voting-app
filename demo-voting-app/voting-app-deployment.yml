@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: worked-app-deployment
+  name: voting-app-deployment
   labels:
     app: demo-voting-app
 spec:
