@@ -5,7 +5,7 @@ metadata:
   labels:
     app: demo-voting-app
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     name: worker-app-pod
     app: demo-worker-app
