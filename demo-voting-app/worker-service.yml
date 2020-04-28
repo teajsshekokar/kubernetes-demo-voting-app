@@ -5,11 +5,11 @@ metadata:
   labels:
     app: demo-voting-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: worker-app-pod
     app: demo-worker-app
   ports:
     - port: 80
-      targetPort: 30001
+      targetPort: 80
       
