@@ -48,8 +48,8 @@ metadata:
   labels:
     app: wordpress
 spec:
-  metadata:
-    labels:
+  selector:
+    matchLabels:
       {{- include "mysql.selectorLabels" . | nindent 6 }}
   template:
     metadata:
