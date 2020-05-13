@@ -97,7 +97,7 @@ persistentVolume:
   pv1: 
     name: local-pv-1
     storage: 10Gi
-    accessModes:
+    accessModes: ReadWriteOnce
     path: /k8/volume/pv-1
   pv2: 
     name: local-pv-1
