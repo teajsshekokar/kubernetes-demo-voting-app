@@ -99,10 +99,10 @@ persistentVolume:
     accessModes: ReadWriteOnce
     path: /k8/volume/pv-1
   pv2: 
-    name: local-pv-1
+    name: local-pv-2
     storage: 10Gi
     accessModes: ReadWriteOnce
-    path: /k8/volume/pv-1
+    path: /k8/volume/pv-2
     
 persistentVolumeClaim:
   wordpress:
