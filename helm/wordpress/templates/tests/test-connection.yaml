@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: "{{ include "wordpress.fullname" . }}-test-connection"
   labels:
-    {{- include "wordpress.labels" . | nindent 4 }}
+    app: {{- include "wordpress.labels" . }}
   annotations:
     "helm.sh/hook": test-success
 spec:
