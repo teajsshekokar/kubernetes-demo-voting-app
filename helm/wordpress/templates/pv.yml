@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Values.persistentVolume.pv1.name }}
+  labels:
+    type: {{ .Values.persistentVolume.type }}
+spec:
+  capacity:
+    storage: {{ .Values.persistentVolume.pv1.storage }}
+  accessModes:
+    - {{ .Values.persistentVolume.pv1.accessModes }}
+  hostPath:
+    path: {{ .Values.persistentVolume.pv1.path }}
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ .Values.persistentVolume.pv2.name }}
+  labels:
+    type: {{ .Values.persistentVolume.type }}
+spec:
+  capacity:
+    storage: {{ .Values.persistentVolume.pv2.storage }}
+  accessModes:
+    - {{ .Values.persistentVolume.pv2.accessModes }}
+  hostPath:
+    path: {{ .Values.persistentVolume.pv2.path }}
