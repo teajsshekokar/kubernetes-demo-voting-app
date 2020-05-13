@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.mysql.service.name }}
   labels:
-    app: {{- include "wordpress.labels" }}
+    app: {{- include "wordpress.labels" . }}
 spec:
   ports:
     - port: {{ .Values.mysql.service.port}}

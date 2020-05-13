@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name:  {{ .Values.wordpress.service.name }}
   labels:
-    app: {{- include "wordpress.labels" }}
+    app: {{- include "wordpress.labels" . }}
 spec:
   ports:
     - port: {{ .Values.wordpress.service.port }}
