@@ -79,7 +79,6 @@ autoscaling:
 # affinity: {}
 
 mysql:  
-
   service:
     port: 3306
     name: wordpress-mysql
