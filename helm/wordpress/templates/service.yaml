@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.mysql.service.name }}
   labels:
-    {{- include "wordpress.labels" . | nindent 4 }}
+    app: {{- include "wordpress.labels" . | nindent 4 }}
 spec:
   ports: 
     - port: {{ .Values.mysql.service.port}}
@@ -17,7 +17,7 @@ kind: Service
 metadata:
   name:  {{ .Values.wordpress.service.name }}
   labels:
-    {{- include "wordpress.labels" . | nindent 4 }}
+    app: {{- include "wordpress.labels" . | nindent 4 }}
 spec:
   ports:
     - port: {{ .Values.wordpress.service.port }}
