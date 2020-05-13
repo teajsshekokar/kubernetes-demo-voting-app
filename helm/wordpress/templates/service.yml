@@ -5,7 +5,7 @@ metadata:
   labels:
     app: {{- include "wordpress.labels" . | nindent 4 }}
 spec:
-  ports: 
+  ports:
     - port: {{ .Values.mysql.service.port}}
   selector:
     {{- include "mysql.selectorLabels" . | nindent 4 }}
