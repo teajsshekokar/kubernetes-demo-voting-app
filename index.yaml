@@ -3,7 +3,7 @@ entries:
   my-wordpress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: ""
+    created: "2006-01-02T15:04:05Z07:00"
     description: A Helm chart for Kubernetes
     digest: xxx
     name: wordpress-chart
