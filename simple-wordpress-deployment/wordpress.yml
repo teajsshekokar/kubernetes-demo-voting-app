@@ -9,9 +9,8 @@ spec:
     - port: 80
       nodePort: 30000
   selector:
-    matchLabels: 
-      app: wordpress
-      tier: frontend
+    app: wordpress
+    tier: frontend
   type: NodePort
 ---
 apiVersion: v1
