@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  my-wordpress:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: ""
+    description: A Helm chart for Kubernetes
+    digest: xxx
+    name: wordpress-chart
+    urls:
+    - wordpress-0.1.0.tgz
+    version: 0.1.0
+
