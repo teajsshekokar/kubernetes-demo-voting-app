@@ -1,11 +1,13 @@
 apiVersion: v1
 entries:
-  my-wordpress:
-  - apiVersion: v1
-    appVersion: "1.0"
-    description: A Helm chart for Kubernetes
-    digest: xxx
-    name: wordpress-chart
+  wordpress:
+  - created: 2016-11-18T15:05:51.078570269-07:00
+    description: Deploy a basic wordpress Linux pod
+    digest: f162f319600b41e826d5db38035ef925117830ff
+    home: https://teajsshekokar.github.io/kubernetes-demo-voting-app
+    name: wordpress
+    sources:
+    - https://github.com/kubernetes/helm
     urls:
     - wordpress-0.1.0.tgz
     version: 0.1.0
